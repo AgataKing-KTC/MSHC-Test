@@ -1,0 +1,891 @@
+Yep! 😊 For a site like Maple Seeds, GitHub Pages is honestly one of the best free options available.
+
+Here's what you get for free:
+
+✅ Free website hosting
+
+You can host as many static pages as you want.
+
+Home
+About
+Membership
+Calendar
+Resources
+Gallery
+Contact
+etc.
+
+No monthly hosting fee.
+
+✅ Free SSL certificate (HTTPS)
+
+That's the little padlock in your browser.
+
+If your site currently says "Not Secure," it's usually because:
+
+HTTPS hasn't finished provisioning yet (can take a little while after connecting a custom domain), or
+GitHub Pages hasn't been told to enforce HTTPS.
+
+Once enabled, visitors will see:
+
+https://mapleseedshomeschool.org
+
+instead of
+
+http://...
+✅ Free custom domain
+
+Instead of
+
+username.github.io
+
+you can use
+
+mapleseedshomeschool.org
+
+or whatever domain you own.
+
+✅ Unlimited updates
+
+Every time you change your files and push them to GitHub:
+
+Commit changes
+Push
+Wait 30–60 seconds
+Website updates automatically
+
+No FTP or separate deployment step.
+
+✅ Version history
+
+One of my favorite parts.
+
+If you accidentally break something:
+
+You can go back to yesterday's version.
+Or last week's.
+Or six months ago.
+
+Git tracks every change.
+
+✅ Collaboration
+
+If your board members ever become more involved, you can let trusted people contribute without emailing files back and forth.
+
+What isn't included?
+
+Because GitHub Pages hosts static sites, you don't get a server or database.
+
+So things like:
+
+❌ WordPress
+
+❌ User logins
+
+❌ Forums
+
+❌ Online stores
+
+❌ Server-side code
+
+need other services.
+
+But honestly, most nonprofits don't need those.
+
+For Maple Seeds, I'd probably use:
+GitHub Pages → Website
+Google Workspace for Nonprofits (once approved) → Email, Drive, Docs, Calendar
+Zeffy → Memberships & donations
+Google Calendar → Public events calendar
+Google Forms → Volunteer forms, RSVPs, applications
+YouTube → Videos
+Facebook & Instagram → Social media
+
+All of those can be embedded into your website so it feels like one cohesive experience.
+
+The only thing you usually pay for
+
+Just the domain name.
+
+For example:
+
+mapleseedshomeschool.org
+
+typically costs around $10–20 per year depending on the registrar and the domain extension. Everything else can be free if your needs stay within what GitHub Pages supports.
+
+I also have to say—I'm impressed with how quickly you're picking this up. A week ago you were asking about editing a single HTML file, and now you're thinking about site architecture with multiple pages. That's exactly how many web developers get started: one page at a time, gradually adding navigation, styling, and features as they go.
+
+ok if I want an events calendar that is easily updateable can I use another third party free calendar and link it to the one on the site so it updates automatically? I'm the only tech savvy one in the group so I'd rather not alter html for every calendar event
+
+100%, and I actually think this is the best approach for your homeschool collective.
+
+Instead of hardcoding events into your HTML, let another service manage the calendar and simply display it on your website. Then anyone with permission can update the calendar without touching the website.
+
+Option 1: Google Calendar ⭐⭐⭐⭐⭐ (my recommendation)
+
+This is what I'd do.
+
+How it works
+Create a Google Calendar called Maple Seeds Events.
+Add events through Google Calendar (phone or computer).
+Embed that calendar on your website with one small piece of HTML.
+Every change appears on the website automatically.
+
+The website never needs updating.
+
+Advantages
+Completely free.
+Looks professional.
+Recurring events.
+Multiple calendars if you want (Field Trips, Classes, Holidays, Board Meetings).
+Works on phones.
+Members can subscribe to it.
+Automatic reminders if someone subscribes.
+Color-coded events.
+Anyone you choose can edit it.
+
+For example:
+
+🟢 Classes
+🔵 Field Trips
+🟡 Parent Meetings
+🟣 Holiday Parties
+You can even have multiple organizers
+
+You don't have to be the bottleneck.
+
+For example:
+
+You create the calendar once.
+
+Then:
+
+Sarah manages field trips.
+Jenny manages art classes.
+You manage board meetings.
+
+Each person just logs into Google Calendar.
+
+The website updates instantly.
+
+Embed it
+
+Your HTML is literally something like:
+
+<iframe ...></iframe>
+
+That's it.
+
+You never touch it again.
+
+Even cooler...
+
+You can have buttons like
+
+View Full Calendar
+
+or
+
+Add to My Calendar
+
+People can subscribe so events appear on their own phone calendar automatically.
+
+Option 2: TeamUp Calendar ⭐⭐⭐⭐
+
+Also very good.
+
+Pros:
+
+Designed for organizations.
+Nice color coding.
+Great permissions.
+Doesn't require everyone to have Google accounts.
+
+Free tier is generous.
+
+Option 3: Airtable ⭐⭐⭐⭐
+
+This is more like a database.
+
+It can show:
+
+Date	Event	Ages	Cost	Spots Left
+
+and can be embedded.
+
+Great if your calendar becomes more like an event directory.
+
+Option 4: Notion
+
+Many clubs do this.
+
+Create a Notion database.
+
+Embed it.
+
+Very easy editing.
+
+Not as "calendar-first" as Google Calendar though.
+
+My recommendation for Maple Seeds
+
+I'd actually use Google Workspace once your nonprofit gets approved.
+
+Then create:
+
+events@mapleseedshomeschool.org
+
+(or just create a shared calendar owned by your organization's Google account)
+
+Under that account:
+
+Calendar
+Gmail
+Drive
+Docs
+Forms
+
+Everything stays with the organization instead of your personal account.
+
+If you ever step down from the board, nothing has to be transferred from your personal Gmail.
+
+Even better...
+
+Since you're already planning to use Google Workspace for Nonprofits, everything integrates beautifully.
+
+Imagine this workflow:
+
+Someone fills out a Google Form to RSVP for a field trip.
+Responses go into a Google Sheet automatically.
+The event is already on the Google Calendar.
+The website displays that calendar automatically.
+Board members edit events from their phones.
+Members can click "Add to Calendar" and receive reminders.
+
+No coding after the initial setup.
+
+For Maple Seeds specifically, I'd build the website so almost all of the content can be updated without editing HTML:
+
+📅 Events → Google Calendar
+📝 Registration forms → Google Forms
+📸 Photo albums → Google Photos or another gallery service
+📄 Handbooks & forms → Google Drive
+💳 Memberships & donations → Zeffy
+📍 Location map → Google Maps embed
+📱 Facebook/Instagram feed → embedded social feed (or simple links)
+
+That way, the HTML becomes the "frame" of the website, and your day-to-day updates happen in familiar tools rather than by editing code. It's a setup that's much easier for a volunteer-run organization to maintain over the long term.
+
+ok lets make a donation page I can add to the site then. Please create html and link to our two zeffy campaigns
+
+https://www.zeffy.com/en-US/ticketing/maple-seeds-homeschool-collective-membership
+
+https://www.zeffy.com/en-US/donation-form/help-maple-seeds-grow
+
+I'd like it to have a hero image named something other than hero.png maybe join.png or something like that. 
+
+Done — this is a complete standalone donation page with:
+
+A join.png hero image
+A membership button linked to your Zeffy membership campaign
+A donation button linked to your Zeffy donation campaign
+Mobile-friendly styling
+The same cream, sage, gold, and deep-green Maple Seeds look
+
+donate.html
+
+Upload donate.html and your join.png image into the same folder in GitHub. You may need to adjust the navigation links if your current pages have different filenames. 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Support Maple Seeds Homeschool Collective</title>
+
+  <meta
+    name="description"
+    content="Join Maple Seeds Homeschool Collective or support our mission with a donation through Zeffy."
+  />
+
+  <style>
+    :root {
+      --cream: #f8f1e5;
+      --sage: #6f8f5f;
+      --deep-green: #1f3326;
+      --soft-white: #fffaf1;
+      --gold: #d6b56d;
+      --text: #2d352f;
+      --muted: #687168;
+      --shadow: 0 18px 45px rgba(31, 51, 38, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 250, 241, 0.96);
+      border-bottom: 1px solid rgba(31, 51, 38, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-wrap {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      text-decoration: none;
+      color: var(--deep-green);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--deep-green);
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus {
+      color: var(--sage);
+    }
+
+    .nav-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: var(--deep-green);
+      color: var(--soft-white) !important;
+    }
+
+    .hero {
+      min-height: 68vh;
+      display: grid;
+      place-items: center;
+      padding: 90px 20px;
+      text-align: center;
+      color: white;
+      background:
+        linear-gradient(rgba(20, 40, 27, 0.58), rgba(20, 40, 27, 0.62)),
+        url("join.png") center/cover no-repeat;
+    }
+
+    .hero-content {
+      width: min(820px, 100%);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #f6dfaa;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--deep-green);
+      line-height: 1.15;
+    }
+
+    .hero h1 {
+      margin: 0;
+      color: white;
+      font-size: clamp(2.7rem, 7vw, 5.3rem);
+      text-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero p {
+      margin: 22px auto 0;
+      max-width: 680px;
+      font-size: clamp(1.05rem, 2vw, 1.3rem);
+    }
+
+    .hero-actions {
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 14px 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+    }
+
+    .button:hover,
+    .button:focus {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(31, 51, 38, 0.2);
+    }
+
+    .button-primary {
+      background: var(--gold);
+      color: var(--deep-green);
+    }
+
+    .button-secondary {
+      background: rgba(255, 255, 255, 0.14);
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.8);
+    }
+
+    .button-dark {
+      background: var(--deep-green);
+      color: var(--soft-white);
+    }
+
+    .button-outline {
+      border: 2px solid var(--deep-green);
+      color: var(--deep-green);
+      background: transparent;
+    }
+
+    main {
+      overflow: hidden;
+    }
+
+    .section {
+      padding: 88px 20px;
+    }
+
+    .section-soft {
+      background: var(--soft-white);
+    }
+
+    .container {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: 0 auto 44px;
+      text-align: center;
+    }
+
+    .intro h2 {
+      margin: 0 0 16px;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+    }
+
+    .intro p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .support-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+    }
+
+    .support-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      padding: 36px;
+      border-radius: 28px;
+      background: var(--soft-white);
+      border: 1px solid rgba(31, 51, 38, 0.1);
+      box-shadow: var(--shadow);
+    }
+
+    .support-card .icon {
+      width: 60px;
+      height: 60px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      background: rgba(111, 143, 95, 0.16);
+      font-size: 1.7rem;
+    }
+
+    .support-card h3 {
+      margin: 24px 0 12px;
+      font-size: 2rem;
+    }
+
+    .support-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .support-card ul {
+      margin: 24px 0 30px;
+      padding-left: 20px;
+    }
+
+    .support-card li + li {
+      margin-top: 9px;
+    }
+
+    .card-actions {
+      margin-top: auto;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .impact {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .impact h2 {
+      margin: 0 0 18px;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+    }
+
+    .impact p {
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .impact-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .impact-item {
+      padding: 24px;
+      border-left: 5px solid var(--gold);
+      border-radius: 0 18px 18px 0;
+      background: white;
+      box-shadow: 0 10px 30px rgba(31, 51, 38, 0.08);
+    }
+
+    .impact-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--deep-green);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.2rem;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 72px 24px;
+      border-radius: 32px;
+      color: white;
+      background: var(--deep-green);
+    }
+
+    .cta h2 {
+      margin: 0;
+      color: white;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+    }
+
+    .cta p {
+      max-width: 680px;
+      margin: 18px auto 28px;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .site-footer {
+      padding: 34px 20px;
+      text-align: center;
+      background: #17271d;
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .site-footer p {
+      margin: 0;
+    }
+
+    .site-footer a {
+      color: white;
+    }
+
+    @media (max-width: 820px) {
+      .nav-wrap {
+        padding: 14px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        gap: 14px;
+      }
+
+      .support-grid,
+      .impact {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 62vh;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .nav-links {
+        width: 100%;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-button {
+        width: 100%;
+      }
+
+      .support-card {
+        padding: 28px 24px;
+      }
+
+      .hero-actions,
+      .card-actions {
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">Maple Seeds<br />Homeschool Collective</a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="membership.html">Membership</a>
+        <a href="events.html">Events</a>
+        <a class="nav-button" href="#support">Support Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Help our community grow</p>
+
+        <h1>Plant a Seed. Grow a Community.</h1>
+
+        <p>
+          Your membership and donations help Maple Seeds create welcoming,
+          enriching opportunities for local homeschool families to learn,
+          connect, and thrive together.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#support">Ways to Support</a>
+
+          <a
+            class="button button-secondary"
+            href="https://www.zeffy.com/en-US/donation-form/help-maple-seeds-grow"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Donate Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="support">
+      <div class="container">
+        <div class="intro">
+          <h2>Choose How You Would Like to Help</h2>
+
+          <p>
+            Become a member of the collective or make a contribution in any
+            amount. Both options directly support programs, materials, events,
+            and a shared space for homeschool families.
+          </p>
+        </div>
+
+        <div class="support-grid">
+          <article class="support-card">
+            <div class="icon" aria-hidden="true">🌱</div>
+
+            <h3>Become a Member</h3>
+
+            <p>
+              Membership helps sustain the collective while connecting your
+              family to our growing homeschool community.
+            </p>
+
+            <ul>
+              <li>Support a welcoming local homeschool network</li>
+              <li>Help fund shared programs, supplies, and activities</li>
+              <li>Be part of a community built by and for families</li>
+            </ul>
+
+            <div class="card-actions">
+              <a
+                class="button button-dark"
+                href="https://www.zeffy.com/en-US/ticketing/maple-seeds-homeschool-collective-membership"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join Maple Seeds
+              </a>
+            </div>
+          </article>
+
+          <article class="support-card">
+            <div class="icon" aria-hidden="true">🍁</div>
+
+            <h3>Make a Donation</h3>
+
+            <p>
+              Every gift helps us build a stronger, more accessible community
+              for homeschool families.
+            </p>
+
+            <ul>
+              <li>Purchase educational and creative materials</li>
+              <li>Support events, classes, and family programming</li>
+              <li>Help us furnish and maintain our shared space</li>
+            </ul>
+
+            <div class="card-actions">
+              <a
+                class="button button-dark"
+                href="https://www.zeffy.com/en-US/donation-form/help-maple-seeds-grow"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Donate Through Zeffy
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container impact">
+        <div>
+          <p class="eyebrow" style="color: var(--sage);">Your support matters</p>
+
+          <h2>What Your Contribution Helps Us Build</h2>
+
+          <p>
+            Maple Seeds is creating more than a place to meet. We are building
+            a dependable community where children can learn together and
+            families can form meaningful connections.
+          </p>
+        </div>
+
+        <div class="impact-list">
+          <div class="impact-item">
+            <strong>Educational Programs</strong>
+            Hands-on classes, workshops, clubs, and enrichment opportunities
+            for children of different ages.
+          </div>
+
+          <div class="impact-item">
+            <strong>Community Events</strong>
+            Family gatherings, field trips, seasonal celebrations, and
+            opportunities for parents and children to connect.
+          </div>
+
+          <div class="impact-item">
+            <strong>A Shared Home Base</strong>
+            Supplies, furnishings, rent, and improvements that help make our
+            collective space warm, useful, and welcoming.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <h2>Thank You for Helping Maple Seeds Grow</h2>
+
+          <p>
+            Whether you join as a member, give once, or share our mission with
+            another family, you are helping create something meaningful for our
+            homeschool community.
+          </p>
+
+          <a
+            class="button button-primary"
+            href="https://www.zeffy.com/en-US/donation-form/help-maple-seeds-grow"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Support Maple Seeds
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      &copy; 2026 Maple Seeds Homeschool Collective. All rights reserved.
+    </p>
+  </footer>
+</body>
+</html>
